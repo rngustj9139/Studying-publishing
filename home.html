@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Publishing studying</title>
+    <style>
+        .nav {
+            height: 70px;
+            border-bottom: 1px solid black;
+            display: flex; /* nav items를 가로로 나열함 */
+            align-items: center; /* 너무 위쪽으로 치우쳐진 nav items를 중앙으로 움직임 */
+        }
+        .nav-right-items {
+            display: flex;
+            margin-left: auto; /* nav items를 오른쪽으로 이동시킴 */
+            margin-right: 10px;
+        }
+        .nav-item {
+            margin-left: 10px; /* nav item간의 간격을 조절 */
+        }
+        .company-name {
+            margin-left: 10px;
+        }
+        .title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-align: center; /* 텍스트를 center 정렬 */
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            font-weight: 300;
+            text-align: center; /* 텍스트를 center 정렬 */
+        }
+        .main { /* 텍스트를 중앙으로 밀집시킴 */
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+        .price-item {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 20px;
+            border-radius: 3px; /* 사각형에 라운드를 준다 */
+        }
+        .prices {
+            display: flex;
+        }
+        .price-item-title {
+            font-size: 1.5rem;
+            background: rgba(0, 0, 0, .03);
+            text-align: center;
+            height: 53px;
+            line-height: 53px; /* 너무 위로 치우쳐진 글자를 중앙으로 이동시킨다. */
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="company-name">
+            Koo's company
+        </div>
+        <div class="nav-right-items">
+            <div class="nav-item">메뉴1</div>
+            <div class="nav-item">메뉴2</div>
+            <div class="nav-item">메뉴3</div>
+            <div class="nav-item">메뉴4</div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">
+            Pricing
+        </div>
+        <div class="subtitle">
+            Quickly build an effective pricing table for your potential customers with this Bootstrap example
+            . It's built with default Bootstrap components and utilities with little customization.
+        </div>
+
+        <div class="prices">
+            <div class="price-item">
+                <div class="price-item-title">
+                    Free
+                </div>
+                <div class="price-item-price">
+                    $0 / mo
+                </div>
+                <div class="price-item-detail">
+                    10 users included
+                </div>
+                <button class="price-item-button">
+                    Click me
+                </button>
+            </div>
+            <div class="price-item">
+                <div class="price-item-title">
+                    Free
+                </div>
+                <div class="price-item-price">
+                    $0 / mo
+                </div>
+                <div class="price-item-detail">
+                    10 users included
+                </div>
+                <button class="price-item-button">
+                    Click me
+                </button>
+            </div>
+            <div class="price-item">
+                <div class="price-item-title">
+                    Free
+                </div>
+                <div class="price-item-price">
+                    $0 / mo
+                </div>
+                <div class="price-item-detail">
+                    10 users included
+                </div>
+                <button class="price-item-button">
+                    Click me
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
