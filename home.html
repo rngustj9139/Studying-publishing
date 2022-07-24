@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- DTD(Document Type Definition) => 문서형식을 정의하는 태그, HTML5를 쓴다는 의미-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- 이 태그가 없으면 한글, 특수문자들이 깨져서 나올 수 있다.-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Publishing studying</title>
     <style>
@@ -23,47 +24,16 @@
         }
         .company-name {
             margin-left: 10px;
-        }
-        .title {
-            font-size: 3.5rem;
             font-weight: bold;
-            text-align: center; /* 텍스트를 center 정렬 */
-        }
-        .subtitle {
-            font-size: 1.25rem;
-            font-weight: 300;
-            text-align: center; /* 텍스트를 center 정렬 */
-        }
-        .main { /* 텍스트를 중앙으로 밀집시킴 */
-            width: 800px;
-            margin: 0 auto;
-            margin-top: 60px;
-        }
-        .price-item {
-            width: 300px;
-            height: 300px;
-            border: 1px solid black;
-            margin: 20px;
-            border-radius: 3px; /* 사각형에 라운드를 준다 */
-        }
-        .prices {
-            display: flex;
-        }
-        .price-item-title {
-            font-size: 1.5rem;
-            background: rgba(0, 0, 0, .03);
-            text-align: center;
-            height: 53px;
-            line-height: 53px; /* 너무 위로 치우쳐진 글자를 중앙으로 이동시킨다. */
-            border-bottom: 1px solid black;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
     <div class="nav">
-        <div class="company-name">
+        <a href="file:///C:/Users/mnb91/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/Spring_Project/wony%20publishing/home.html" class="company-name">
             Koo's company
-        </div>
+        </a>
         <div class="nav-right-items">
             <div class="nav-item">메뉴1</div>
             <div class="nav-item">메뉴2</div>
@@ -76,8 +46,8 @@
             Pricing
         </div>
         <div class="subtitle">
-            Quickly build an effective pricing table for your potential customers with this Bootstrap example
-            . It's built with default Bootstrap components and utilities with little customization.
+            Quickly build an effective pricing table <br> for your potential customers <br> with this Bootstrap example
+            . <br> It's built with default Bootstrap components <br> and utilities with little customization.
         </div>
 
         <div class="prices">
@@ -89,42 +59,52 @@
                     $0 / mo
                 </div>
                 <div class="price-item-detail">
-                    10 users included
+                    10 users included <br>
+                    2 GB of storage <br>
+                    Email support <br>
+                    Help center access <br>
                 </div>
                 <button class="price-item-button">
-                    Click me
+                    Sign up for free
                 </button>
             </div>
             <div class="price-item">
                 <div class="price-item-title">
-                    Free
+                    Pro
                 </div>
                 <div class="price-item-price">
-                    $0 / mo
+                    $15 / mo
                 </div>
                 <div class="price-item-detail">
-                    10 users included
+                    20 users included <br>
+                    10 GB of storage <br>
+                    Priority email support <br>
+                    Help center access <br>
                 </div>
-                <button class="price-item-button">
-                    Click me
+                <button class="price-item-button price-item-button--active">
+                    Get started
                 </button>
             </div>
             <div class="price-item">
                 <div class="price-item-title">
-                    Free
+                    Enterprise
                 </div>
                 <div class="price-item-price">
-                    $0 / mo
+                    $29 / mo
                 </div>
                 <div class="price-item-detail">
-                    10 users included
+                    30 users included <br>
+                    15 GB of storage <br>
+                    Phone and email support <br>
+                    Help center access <br>
                 </div>
-                <button class="price-item-button">
-                    Click me
+                <button class="price-item-button price-item-button--active">
+                    Contact us
                 </button>
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,59 @@
+.title {
+    font-size: 3.5rem; /* 예를 들어 기준이 되는 값, 즉 html 태그의 font-size 값이 이 16px 라면 2rem 은 32px 을 의미합니다. */
+    font-weight: bold;
+    text-align: center; /* 텍스트를 center 정렬 */
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center; /* 텍스트를 center 정렬 */
+    margin-bottom: 20px;
+}
+.main { /* 텍스트를 중앙으로 밀집시킴 */
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.price-item {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 5px; /* 사각형에 라운드를 준다 */
+    text-align: center;
+}
+.prices {
+    display: flex;
+}
+.price-item-title {
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, .03); /* rgba == red, green, blue, alpha(투명도)*/
+    height: 53px;
+    line-height: 53px; /* 너무 위로 치우쳐진 글자를 중앙으로 이동시킨다. (글자 줄간 간격) */
+    border-bottom: 1px solid black;
+}
+.price-item-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 8px; /* Margin: Object와 화면과의 여백(외부여백) Padding: Object 내의 내부여백 */
+}
+.price-item-button {
+    color: #007bff;
+    background-color: transparent; /* 아무 색 없음 */
+    background-image: none;
+    border-color: #007bff;
+    border-style: thin;
+
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+.price-item-button--active {
+    background-color: #007bff;
+    color: white;
+}
+.price-item-detail {
+    padding-bottom: 18px;
+}
