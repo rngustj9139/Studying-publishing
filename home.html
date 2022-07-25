@@ -9,39 +9,64 @@
     <title>Publishing studying</title>
     <style>
         .nav {
-            height: 70px;
+            height: 73px;
             border-bottom: 1px solid black;
             display: flex; /* nav items를 가로로 나열함 */
             align-items: center; /* 너무 위쪽으로 치우쳐진 nav items를 중앙으로 움직임 */
         }
         .nav-right-items {
-            display: flex;
-            margin-left: auto; /* nav items를 오른쪽으로 이동시킴 */
+            display: flex; /* 만약 세로로 정렬 하고 싶으면 display: flex; 한다음에 flex-direction: column;을 쓰면 된다. 세로를 가운데로 보내고 싶으면 align-items: center;를 쓰면 된다. */
+            margin-left: auto; /* nav items를 오른쪽으로 이동시킴 만약 가운데 정렬 하고 싶으면 justify-content: center; 쓰면 된다. */
             margin-right: 10px;
         }
         .nav-item {
             margin-left: 10px; /* nav item간의 간격을 조절 */
+            text-decoration: none; /* a href는 밑줄이 자동으로 생기고 색이 변한다 이를 막기 위해 사용*/
         }
         .company-name {
             margin-left: 10px;
             font-weight: bold;
             font-size: 20px;
+            text-decoration: none;
+        }
+        #horizontal-underline { /* 메뉴칸에 마우스 오버시 밑줄 생성하기 위해 만듦 */
+            position: absolute; /* 페이지의 맨 왼쪽 맨 위를 (0, 0)좌표로 잡고 절대값 좌표를 주면서 이동시킨다. */
+            width: 0;
+            height: 4px;
+            background-color: pink;
+            border-radius: 3px;
+            top: 0; /* (0,0)좌표를 기준으로(맨위, 맨왼쪽) 아래로 50px만큼 떨어뜨린다. */
+            left: 0; /* (0,0)좌표를 기준으로(맨위, 맨왼쪽) 오른쪽으로 30px만큼 떨어뜨린다. */
+            transition: 0.5s; /* 메뉴 버튼을 클릭했을때 하단에 언더라인이 생기는것을 딱딱하고 절도있게 생기게 하지 않고 부드럽게 생기게 함 */
         }
     </style>
 </head>
 <body>
+    <!-- div는 한줄 전체 차지(block element), span은 자기 내용물 만큼의 공간만 차지(inline element) -->
+    <!-- <ul><li>는 포인트만 있음 -->
+    <!-- <ol><li>는 숫자만 있음 --> 
     <!-- <video src="test.mp4" controls /> controls는 재생버튼 소리크기버튼등을 표시해준다. -->
-    <div class="nav">
-        <a href="file:///C:/Users/mnb91/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/Spring_Project/wony%20publishing/home.html" class="company-name">
-            Koo's company
+    <!-- <textarea></textarea> -->
+    <!-- <i>기울어진 글씨 </i> -->
+    <!-- <b>굵은 글씨 </b> -->
+    <!-- <input type="number" /> -->
+    <!-- <input type="email" /> => 이메일 형식 아니면 벨라데이션 발동함 -->
+    <!-- <input type="password" /> -->
+    <!-- <input type="radio" /> -->
+    <!-- <input type="checkbox" /> -->
+
+    <nav class="nav">
+        <a href="home.html" class="company-name">
+            Koo's company <!-- href 옆에 target="_blink" 추가하면 새창을 열어서 이동한다. -->
         </a>
         <div class="nav-right-items">
-            <div class="nav-item">메뉴1</div>
-            <div class="nav-item">메뉴2</div>
-            <div class="nav-item">메뉴3</div>
-            <div class="nav-item">메뉴4</div>
+            <div id="horizontal-underline"></div> <!-- 메뉴칸에 마우스 오버시 밑줄 생성하기 위해 만듦 -->
+            <a href="#" class="nav-item">About</a> <!-- href에 경로를 넣으면 하단바가 생기고 바로 사라지는 문제 존재 -->
+            <a href="#" class="nav-item">Store</a>
+            <a href="#" class="nav-item">Menu3</a>
+            <a href="#" class="nav-item">Menu4</a>
         </div>
-    </div>
+    </nav>
     <div class="main">
         <div class="title">
             Pricing
